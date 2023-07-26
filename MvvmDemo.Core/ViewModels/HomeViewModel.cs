@@ -1,24 +1,28 @@
 ﻿using MvvmCross.Commands;
 using MvvmCross.ViewModels;
+using MvvmDemo.Core.Helpers;
+using MvvmDemo.Core.Models;
+using MvvmDemo.Core.Services;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MvvmDemo.Core.ViewModels
 {
-    public class HomeViewModel : MvxViewModel
+    public class HomeViewModel : MvxViewModel, IMvxNotifyPropertyChanged
     {
-        public IMvxCommand ResetTextCommand => new MvxCommand(ResetText);
-        private void ResetText()
-        {
-            Text = "Hello MvvmCross";
-        }
 
-        private string _text = "Hello MvvmCross";
-        public string Text
+        public event PropertyChangedEventHandler PropertyChanged;
+        public ComicService comicService;
+        
+
+        public HomeViewModel()
         {
-            get { return _text; }
-            set { SetProperty(ref _text, value); }
+
         }
     }
 }

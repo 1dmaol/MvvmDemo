@@ -6,7 +6,7 @@ using Android.Content.PM;
 namespace MvvmDemo.Android
 {
     [Activity(
-       Label = "$rootnamespace$"
+       Label = "MvvmDemo"
        , MainLauncher = true
        , NoHistory = true
        , ScreenOrientation = ScreenOrientation.Portrait)]
