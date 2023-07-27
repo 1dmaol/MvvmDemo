@@ -13,6 +13,13 @@
 		local:MvxBind="Text Text"
 		android:hint="Search by title"
 		/>
+	<MvxListView
+		android:id="@+id/mvx_list"
+        android:layout_width="fill_parent"    
+        android:layout_height="wrap_content"    
+        android:textSize="40dp"    
+        local:MvxBind="ItemsSource ComicsCollection"
+         />  
 	<ProgressBar
 		android:id="@+id/progress_bar_comic_list"
         android:layout_width="50dp"

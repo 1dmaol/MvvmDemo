@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using MvvmDemo.Core.Helpers;
 using MvvmDemo.Core.Models;
-using Newtonsoft.Json;
 
 namespace MvvmDemo.Core.Services
 {
-	public class ComicService : IComicService
+    public class ComicService : IComicService
 	{
         public const string TAG = "ComicService ";
 

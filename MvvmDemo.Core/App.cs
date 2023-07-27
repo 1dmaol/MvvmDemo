@@ -1,7 +1,6 @@
 ﻿using MvvmCross.IoC;
 using MvvmCross.ViewModels;
 using MvvmDemo.Core.ViewModels;
-using System;
 
 namespace MvvmDemo.Core
 {

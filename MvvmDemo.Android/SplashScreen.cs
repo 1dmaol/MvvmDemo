@@ -16,5 +16,6 @@ namespace MvvmDemo.Android
              : base(Resource.Layout.SplashScreen)
         {
         }
+
     }
 }

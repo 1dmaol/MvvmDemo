@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-	<Space
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+    <Space
         android:layout_width="match_parent"
         android:layout_height="100dp"/>
 
-    <Refractored.Controls.CircleImageView
+    <ImageView
 		android:layout_width="90dp"
         android:layout_height="90dp"
 		android:id="@+id/item_comic_img"
@@ -19,6 +20,7 @@
 
 		<TextView
 		android:id="@+id/item_comic_name"
+        local:MvxBind="Text title"
 		android:text="Name"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -31,6 +33,7 @@
 		android:maxLines="1"/>
 	<TextView
 		android:id="@+id/item_comic_info"
+        local:MvxBind="Text description"
 		android:text="Information"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"

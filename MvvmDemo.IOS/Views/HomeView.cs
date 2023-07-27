@@ -18,8 +18,6 @@ namespace MvvmDemo.IOS.Views
             base.ViewDidLoad();
 
             var set = this.CreateBindingSet<HomeView, Core.ViewModels.HomeViewModel>();
-            set.Bind(TextField).To(vm => vm.Text);
-            set.Bind(Button).To(vm => vm.ResetTextCommand);
             set.Apply();
         }
     }

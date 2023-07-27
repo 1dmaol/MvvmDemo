@@ -100,6 +100,7 @@ namespace MvvmDemo.Core.Models
         public Characters characters { get; set; }
         public Stories stories { get; set; }
         public Events events { get; set; }
+        public string thumbnailUrl { get { return thumbnail.path + "." + thumbnail.extension; } }
     }
 
     public class Root

@@ -69,7 +69,6 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="HomeViews\Adapters\ComicAdapter.cs" />
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="HomeViews\ComicView.cs" />
   </ItemGroup>
@@ -100,18 +99,17 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
-    <AndroidResource Include="Resources\layout\ListItem.xml">
+    <AndroidResource Include="Resources\layout\ComicView.axml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ComicView.axml">
+    <AndroidResource Include="Resources\layout\ListItem.axml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
-    <Folder Include="HomeViews\Adapters\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
