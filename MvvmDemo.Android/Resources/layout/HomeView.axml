@@ -6,19 +6,12 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent">
 
-	<EditText
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:textSize="26dp"
-		local:MvxBind="Text Text"
-		android:hint="Search by title"
-		/>
 	<MvxListView
 		android:id="@+id/mvx_list"
         android:layout_width="fill_parent"    
         android:layout_height="wrap_content"    
         android:textSize="40dp"    
-        local:MvxBind="ItemsSource ComicsCollection"
+        local:MvxBind="ItemsSource ComicsCollection; ItemClick ClickCommand"
          />  
 	<ProgressBar
 		android:id="@+id/progress_bar_comic_list"

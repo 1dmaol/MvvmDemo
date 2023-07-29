@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MvvmDemo.Android</string>
     <string name="action_settings">Settings</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum hendrerit dapibus. Sed tempus tellus sed vehicula viverra. Maecenas accumsan fringilla semper. Maecenas dolor neque, molestie at luctus eu, efficitur quis ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse malesuada enim sagittis pulvinar lobortis. Cras in blandit odio. Etiam laoreet tellus et ipsum tempor dapibus. Proin nec ultrices lacus, ac laoreet elit. Nullam at euismod risus. Pellentesque tristique nisi et tellus semper lobortis ac non mauris. Ut luctus, magna a vestibulum tincidunt, nisi lorem elementum eros, quis semper ante elit ut justo. Vestibulum mattis tincidunt odio non convallis. Aenean vel ornare erat.</string>
 </resources>
