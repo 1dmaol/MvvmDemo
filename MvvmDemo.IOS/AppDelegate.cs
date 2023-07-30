@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using MvvmCross.Platforms.Ios.Core;
+using UIKit;
 
 namespace MvvmDemo.IOS
 {
@@ -9,6 +10,10 @@ namespace MvvmDemo.IOS
     [Register("AppDelegate")]
     public class AppDelegate : MvxApplicationDelegate<MvxIosSetup<Core.App>, Core.App>
     {
+
+        public static int kNavigationBarOffset = 100;
+        public static int kItemListHeight = 50;
+
     }
 }
 

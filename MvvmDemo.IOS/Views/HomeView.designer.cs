@@ -11,30 +11,21 @@ using UIKit;
 
 namespace MvvmDemo.IOS.Views
 {
-    [Register("HomeView")]
-partial class HomeView
-{
-    [Outlet]
-    [GeneratedCode("iOS Designer", "1.0")]
-    UIKit.UIButton Button { get; set; }
-
-    [Outlet]
-    [GeneratedCode("iOS Designer", "1.0")]
-    UIKit.UITextField TextField { get; set; }
-
-    void ReleaseDesignerOutlets()
+	[Register ("HomeView")]
+	partial class HomeView
     {
-        if (Button != null)
-        {
-            Button.Dispose();
-            Button = null;
-        }
+        [Outlet]
+        [GeneratedCode("iOS Designer", "1.0")]
+        UIKit.UITableView ComicListTableView { get; set; }
 
-        if (TextField != null)
+        void ReleaseDesignerOutlets()
         {
-            TextField.Dispose();
-            TextField = null;
+            if (ComicListTableView != null)
+            {
+                ComicListTableView.Dispose();
+                ComicListTableView = null;
+            }
         }
     }
 }
-}
+
