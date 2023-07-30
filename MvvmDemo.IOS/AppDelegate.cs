@@ -12,7 +12,7 @@ namespace MvvmDemo.IOS
     {
 
         public static int kNavigationBarOffset = 100;
-        public static int kItemListHeight = 50;
+        public static int kItemListHeight = 100;
 
     }
 }
