@@ -1,6 +1,6 @@
-# Mobile Developer Technical Challenge @ Appspace
+# Cross-platform Marvel Application
 
-A mobile app for Android and iOS to list Marvel comics and is targeted for an AppSpace technical challenge. 
+A mobile app for Android and iOS to list Marvel comics. 
 The application uses MvvmCross to share code between platforms and is based on Xamarin.Android and Xamarin.iOS frameworks (Xamarin Classic).
 
 ## Future work
