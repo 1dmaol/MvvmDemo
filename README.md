@@ -20,9 +20,9 @@ By incorporating these enhancements, the project will attain a higher level of p
 
 | Android Comic List  | IOS Comic List |
 | ------------- | ------------- |
-|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/4bdfd849-b9b5-4a97-8e67-dd2864f8838e" width="400">|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/b35f6c02-2956-424e-9a6a-3ab285b8e6b2" width="400">|
+|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/73090f2a-7c3a-4bf9-85a1-f2d15d407deb" width="400">|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/1bba1230-76ed-4839-9bba-52372f713eb1" width="400">|
 
 | Android Comic Info  | IOS Comic Info |
 | ------------- | ------------- |
-|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/9eb5fa15-434e-4799-8478-2f9c80bd61e9" width="400">|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/15d49dbd-e6c4-41ec-aada-c492921974a3" width="400">|
+|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/16c77443-8105-4cd0-901b-d3ddf14ee0dd" width="400">|<img src="https://github.com/1dmaol/MvvmDemo/assets/26694130/39f427c0-b9b5-45e5-be5e-3cfb6ae039c0" width="400">|
 
