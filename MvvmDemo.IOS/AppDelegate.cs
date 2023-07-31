@@ -14,6 +14,14 @@ namespace MvvmDemo.IOS
         public static int kNavigationBarOffset = 100;
         public static int kItemListHeight = 100;
 
+        public override void FinishedLaunching(UIApplication application)
+        {
+            base.FinishedLaunching(application);
+            #if ENABLE_TEST_CLOUD
+            Xamarin.Calabash.Start();
+            #endif
+        }
+
     }
 }
 

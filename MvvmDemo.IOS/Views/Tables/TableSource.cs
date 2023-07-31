@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading;
-using Foundation;
+﻿using Foundation;
 using MvvmCross.Platforms.Ios.Binding.Views;
 using MvvmDemo.Core.Models;
 using MvvmDemo.IOS.Helpers;
@@ -38,18 +36,22 @@ namespace MvvmDemo.IOS.Views.Tables
             var imageData = IOSHelper.DownloadImageFromUrl(comic.thumbnailUrl).AsJPEG(0.0f);
             comicImageView.Image = UIImage.LoadFromData(imageData);
             comicImageView.Frame = new CoreGraphics.CGRect(5, 5, 90, 90);
-            comicImageView.ContentMode = UIViewContentMode.ScaleAspectFit;
+            comicImageView.ContentMode = UIViewContentMode.ScaleToFill;
+            comicImageView.Layer.CornerRadius = 45;
+            comicImageView.ClipsToBounds = true;
             cell.Add(comicImageView);
 
             var nameLabel = new UILabel();
             nameLabel.Text = comic.title;
             nameLabel.Font = UIFont.BoldSystemFontOfSize(16);
             nameLabel.Frame = new CoreGraphics.CGRect(105, -15, IOSHelper.TransformCoordinates(DeviceDisplay.MainDisplayInfo.Width, 300, 100), 90);
+            
             cell.Add(nameLabel);
 
             var descriptionLabel = new UILabel();
             descriptionLabel.Text = comic.description;
-            descriptionLabel.Frame = new CoreGraphics.CGRect(105, 5, IOSHelper.TransformCoordinates(DeviceDisplay.MainDisplayInfo.Width, 300, 100), 90);
+            descriptionLabel.Frame = new CoreGraphics.CGRect(105, 15, IOSHelper.TransformCoordinates(DeviceDisplay.MainDisplayInfo.Width, 300, 100), 90);
+            descriptionLabel.Lines = 2;
             cell.Add(descriptionLabel);
 
             nameLabel.LeftAnchor.ConstraintEqualTo(cell.LeftAnchor, 0.0f).Active = true;

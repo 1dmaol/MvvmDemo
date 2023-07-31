@@ -26,6 +26,7 @@ namespace MvvmDemo.IOS.Views
             comicImageView.Image = UIImage.LoadFromData(imageData);
             comicImageView.Frame = new CoreGraphics.CGRect(0, 100, IOSHelper.TransformCoordinates(DeviceDisplay.MainDisplayInfo.Width, 432, 100), IOSHelper.TransformCoordinates(DeviceDisplay.MainDisplayInfo.Height, 300, 100));
             comicImageView.ContentMode = UIViewContentMode.ScaleAspectFit;
+            comicImageView.AccessibilityIdentifier = "comic_image";
             View.Add(comicImageView);
 
             var nameLabel = new UILabel();
@@ -34,7 +35,8 @@ namespace MvvmDemo.IOS.Views
             nameLabel.Font = UIFont.BoldSystemFontOfSize(16);
             nameLabel.TextAlignment = UITextAlignment.Center;
             nameLabel.LineBreakMode = UILineBreakMode.WordWrap;
-            nameLabel.Lines = 0;
+            nameLabel.Lines = 0; 
+            nameLabel.AccessibilityIdentifier = "comic_name";
             View.Add(nameLabel);
 
             var descriptionLabel = new UILabel();
@@ -43,6 +45,7 @@ namespace MvvmDemo.IOS.Views
             descriptionLabel.TextAlignment = UITextAlignment.Center;
             descriptionLabel.LineBreakMode = UILineBreakMode.WordWrap;
             descriptionLabel.Lines = 0;
+            descriptionLabel.AccessibilityIdentifier = "comic_description";
             View.Add(descriptionLabel);
 
         }

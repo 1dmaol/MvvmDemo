@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace MvvmDemo.Android.HomeViews
 {
-    [Activity (Label = "ComicView")]			
+    [Activity (Label = "Comic Information")]			
 	public class ComicView : MvxActivity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)

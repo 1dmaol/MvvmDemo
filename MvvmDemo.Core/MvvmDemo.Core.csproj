@@ -5,15 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="7.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="MvvmCross" Version="7.1.2" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Helpers\" />
     <None Remove="Services\" />
+    <None Remove="MvvmCross" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

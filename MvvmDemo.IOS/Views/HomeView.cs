@@ -1,26 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Policy;
 using CoreGraphics;
-using FFImageLoading;
-using FFImageLoading.Cross;
-using FFImageLoading.Work;
 using Foundation;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.Combiners;
-using MvvmCross.Platforms.Ios.Binding.Views;
 using MvvmCross.Platforms.Ios.Presenters.Attributes;
 using MvvmCross.Platforms.Ios.Views;
 using MvvmDemo.Core.Models;
 using MvvmDemo.Core.ViewModels;
 using UIKit;
 using Xamarin.Essentials;
-using FFImageLoading.Transformations;
-using AssetsLibrary;
-using MvvmCross.Views;
 using MvvmDemo.IOS.Views.Tables;
-using MvvmCross.Commands;
-using System.Windows.Input;
 using MvvmDemo.IOS.Helpers;
 
 namespace MvvmDemo.IOS.Views
@@ -57,7 +47,7 @@ namespace MvvmDemo.IOS.Views
             });
 
             tableList.Source = source;
-
+            tableList.AccessibilityIdentifier = "mvx_list";
             tableList.ReloadData();
             tableList.RowHeight = AppDelegate.kItemListHeight;
             View.Add(tableList);

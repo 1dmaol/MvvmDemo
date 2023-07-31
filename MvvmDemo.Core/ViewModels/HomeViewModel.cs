@@ -15,7 +15,6 @@ namespace MvvmDemo.Core.ViewModels
 
         public string Title
         {
-            
             get { return _title; }
             set { _title = value; RaisePropertyChanged(() => Title); }
         }
@@ -24,16 +23,17 @@ namespace MvvmDemo.Core.ViewModels
 
         public bool IsLoading
         {
-
             get { return _isLoading; }
             set { _isLoading = value; RaisePropertyChanged(() => IsLoading); }
         }
 
-        private Comic selectedItem;
-        public virtual Comic SelectedItem
+
+        private bool _isLoaded = false;
+
+        public bool IsLoaded
         {
-            get => selectedItem;
-            set => SetProperty(ref selectedItem, value);
+            get { return _isLoaded; }
+            set { _isLoaded = value; RaisePropertyChanged(() => IsLoaded); }
         }
 
         private ObservableCollection<Comic> _comicsCollection;
@@ -42,8 +42,6 @@ namespace MvvmDemo.Core.ViewModels
             get { return _comicsCollection; }
             set { _comicsCollection = value; RaisePropertyChanged(() => ComicsCollection); }
         }
-
-        public IMvxCommand ItemClickCommand { get; }
 
         public HomeViewModel()
         {
@@ -55,6 +53,7 @@ namespace MvvmDemo.Core.ViewModels
             IsLoading = true;
             IComicService comicService = new ComicService();
             ComicsCollection = new ObservableCollection<Comic>(await comicService.GetComics());
+            if (ComicsCollection.Count > 0) IsLoaded = true;
             IsLoading = false;
         }
 
